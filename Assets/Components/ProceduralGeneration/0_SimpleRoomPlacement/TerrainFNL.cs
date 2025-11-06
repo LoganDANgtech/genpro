@@ -17,17 +17,26 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
         /*[Header("Room Parameters")]
         [SerializeField, UnityEngine.Range(0, 100)] private int NoiseDensity = 50;
         [SerializeField, UnityEngine.Range(0, 8)] private int detection = 5;*/
-
+        
+        
+        [Tooltip("Les niveaux de du terrain.")]
+        public TerrainLODLevel[] Terrainlevels = new TerrainLODLevel[]
+        {
+            new TerrainLODLevel(){ name = "Water", transitionHeight = -0.5f , color = new Color(157, 194, 203)},
+            new TerrainLODLevel(){ name = "Sand", transitionHeight = 0f ,color = new Color(199, 192, 168)},
+            new TerrainLODLevel(){ name = "Grass", transitionHeight = 0.5f ,color = new Color(42, 182, 115)},
+            new TerrainLODLevel(){ name = "Rock", transitionHeight = 1f , color = new Color(138, 160, 163)},
+        };
 
 
         protected override async UniTask ApplyGeneration(CancellationToken cancellationToken)
         {
             FastNoiseLite fnl = new FastNoiseLite(RandomService.Seed);
 
-            var Rocktemplate = ScriptableObjectDatabase.GetScriptableObject<GridObjectTemplate>("Rock");
-            var Grasstemplate = ScriptableObjectDatabase.GetScriptableObject<GridObjectTemplate>("Grass");
-            var Sandtemplate = ScriptableObjectDatabase.GetScriptableObject<GridObjectTemplate>("Sand");
             var Watertemplate = ScriptableObjectDatabase.GetScriptableObject<GridObjectTemplate>("Water");
+            var Sandtemplate = ScriptableObjectDatabase.GetScriptableObject<GridObjectTemplate>("Sand");
+            var Grasstemplate = ScriptableObjectDatabase.GetScriptableObject<GridObjectTemplate>("Grass");
+            var Rocktemplate = ScriptableObjectDatabase.GetScriptableObject<GridObjectTemplate>("Rock");
 
             for (int x = 0; x < Grid.Width; x++)
             {
@@ -40,15 +49,15 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
                     }
 
                     float noiseatcoord = fnl.GetNoise(x, z);
-                    if (noiseatcoord > 0.8f)//rock
+                    if (noiseatcoord > Terrainlevels[2].transitionHeight)//rock
                     {
                         GridGenerator.AddGridObjectToCell(chosenCell, Rocktemplate, false);
                     }
-                    else if (noiseatcoord > 0.2f)//grass
+                    else if (noiseatcoord > Terrainlevels[1].transitionHeight)//grass
                     {
                         GridGenerator.AddGridObjectToCell(chosenCell, Grasstemplate, false);
                     }
-                    else if (noiseatcoord > -0.3f)//sand
+                    else if (noiseatcoord > Terrainlevels[0].transitionHeight)//sand
                     {
                         GridGenerator.AddGridObjectToCell(chosenCell, Sandtemplate, false);
                     }
