@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
 
 namespace VTools.Grid
 {
@@ -45,6 +46,21 @@ namespace VTools.Grid
             }
             
             GridObjectFactory.SpawnOnGridFrom(template, cell, Grid, transform);
+        }
+
+        public void SwapSpriteGridObject(Cell cell, GridObjectTemplate template)
+        {
+
+            if (!cell.ContainObject)
+            {
+                return;
+            }
+            if (cell.GridObject.Template.Name == template.Name)
+            {
+                return;
+            }
+            cell.GridObject.SetTemplate(template);
+            cell.View.swapSprite(cell, Grid, template.Sprite);
         }
 
         public void ClearGrid()

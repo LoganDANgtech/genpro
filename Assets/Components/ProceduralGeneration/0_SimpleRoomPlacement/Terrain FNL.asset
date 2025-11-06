@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 586394f65f2f42d994c415affdc3c3d1, type: 3}
-  m_Name: Sand
+  m_Script: {fileID: 11500000, guid: 498c7be0ba38a7c4fa9b5262ee50309b, type: 3}
+  m_Name: Terrain FNL
   m_EditorClassIdentifier: 
-  _name: Sand
-  _view: {fileID: 3729838110348376328, guid: e521af2ce6ee8c94bb32c7ea5ddc1196, type: 3}
-  _sprite: {fileID: 21300000, guid: 7fc12cba2cd5d264ebc6ebde5d36768c, type: 3}
+  _maxSteps: 1000

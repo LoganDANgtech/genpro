@@ -24,7 +24,8 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
 
             Debug.Log($"Starting Grid instantiation ...");
             var time = DateTime.Now;
-            BuildGround();
+            await BuildGround();
+            
             BuildNoiseWater();
             Debug.Log($"Instantiation completed in {(DateTime.Now - time).TotalSeconds: 0.00} seconds.");
 
@@ -53,7 +54,7 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
 
                     if (RandomService.Range(0,100) < NoiseDensity)
                     {
-                        GridGenerator.AddGridObjectToCell(chosenCell, groundTemplate, true);
+                        GridGenerator.SwapSpriteGridObject(chosenCell, groundTemplate);
                     }
 
                 }
@@ -123,12 +124,11 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
 
                     if (newgrid[x + z*Grid.Width])
                     {
-                        GridGenerator.AddGridObjectToCell(chosenCell, groundTemplate, true);
+                        GridGenerator.SwapSpriteGridObject(chosenCell, groundTemplate);
                     }
                     else
                     {
-                        GridGenerator.AddGridObjectToCell(chosenCell, waterTemplate, true);
-
+                        GridGenerator.SwapSpriteGridObject(chosenCell, waterTemplate);
                     }
                 }
             }

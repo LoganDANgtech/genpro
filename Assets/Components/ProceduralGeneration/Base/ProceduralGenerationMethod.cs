@@ -97,7 +97,7 @@ namespace Components.ProceduralGeneration
             GridGenerator.AddGridObjectToCell(cell, tileTemplate, overrideExistingObjects);
         }
 
-        protected void BuildGround()
+        protected async UniTask BuildGround()
         {
             var groundTemplate = ScriptableObjectDatabase.GetScriptableObject<GridObjectTemplate>("Grass");
 
@@ -114,6 +114,10 @@ namespace Components.ProceduralGeneration
                     }
 
                     GridGenerator.AddGridObjectToCell(chosenCell, groundTemplate, false);
+                }
+                if (x % 20 == 0)
+                {
+                    await UniTask.WaitForEndOfFrame();
                 }
             }
         }

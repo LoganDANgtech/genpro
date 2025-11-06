@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: CellularAutomata
   m_EditorClassIdentifier: 
   _maxSteps: 5
-  NoiseDensity: 62
+  NoiseDensity: 59
   detection: 3

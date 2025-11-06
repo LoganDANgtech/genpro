@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Grass
   _view: {fileID: 3729838110348376328, guid: f003e51cabca54349ad96a410a54a707, type: 3}
+  _sprite: {fileID: 21300000, guid: 4a459413cbe1f5f489e91ca286eaaea3, type: 3}
