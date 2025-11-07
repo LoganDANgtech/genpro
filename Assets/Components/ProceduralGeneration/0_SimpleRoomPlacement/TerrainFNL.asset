@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 498c7be0ba38a7c4fa9b5262ee50309b, type: 3}
-  m_Name: New Terrain FNL
+  m_Name: TerrainFNL
   m_EditorClassIdentifier: 
   _maxSteps: 1000
   Terrainlevels:
-  - transitionHeight: -0.6641221
+  - transitionHeight: -0.21695763
     name: Water
-    color: {r: 0.6156863, g: 0.76470596, b: 0.7960785, a: 1}
-  - transitionHeight: -0.07888043
+    color: {r: 0.6117647, g: 0.7607844, b: 0.7960785, a: 1}
+  - transitionHeight: 0.15463912
     name: Sand
     color: {r: 0.7490196, g: 0.7176471, b: 0.63529414, a: 1}
-  - transitionHeight: 0.51653945
+  - transitionHeight: 0.45360827
     name: Grass
     color: {r: 0.18431373, g: 0.7137255, b: 0.43529415, a: 1}
   - transitionHeight: 1
