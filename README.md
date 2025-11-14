@@ -8,50 +8,13 @@ yapyap
 <details>
 <summary>Liens</summary>
 
-  - [Getting Started](#1-getting-started)
-  - [Simple Room Placement](#SimpleRoomPlacement)
-  - [BSP](#BSP)
-  - [Cellular Automata](#CellularAutomata)
-  - [Noise Generator](#NoiseGenerator)
+  - 1. [Getting Started](#1-getting-started)
+  - 2. [Simple Room Placement](#SimpleRoomPlacement)
+  - 3. [BSP](#BSP)
+  - 4. [Cellular Automata](#CellularAutomata)
+  - 5. [Noise Generator](#NoiseGenerator)
 
 </details>
-
-a
-A
-
-A
-
-A
-
-
-
-A
-
-A
-A
-A
-A
-A
-A
-
-A
-A
-
-A
-
-A
-A
-A
-A
-
-AA
-
-A
-A
-
-A
-
-a
 
 ## 1. Getting started
 
