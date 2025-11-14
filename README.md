@@ -6,7 +6,6 @@ yapyap
 <details>
 <summary>Liens</summary>
 
-  - [Introduction](#Introduction)
   - [Getting Started](#GettingStarted)
   - [Simple Room Placement](#SimpleRoomPlacement)
   - [BSP](#BSP)
@@ -14,3 +13,8 @@ yapyap
   - [Noise Generator](#NoiseGenerator)
 
 </details>
+1. ## Getting started
+
+- Créer un projet Unity 6
+- Installer Unitask avec le lien [ https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask ] Dans l'Asset Manager
+---
