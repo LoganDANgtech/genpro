@@ -20,4 +20,8 @@ yapyap
 
 - Créer un projet Unity 6
 - Installer Unitask avec le l'url [https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask] Dans l'Asset Manager
+
+- (Créer une scene) et y Rajouter le ```Procedural Grid Generator```
+<img src="Documentation/GridInInspector.png?raw=true"/> 
 ---
+
