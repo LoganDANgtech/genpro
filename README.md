@@ -47,7 +47,7 @@ protected override async UniTask ApplyGeneration(CancellationToken cancellationT
     await UniTask.Delay(GridGenerator.StepDelay, cancellationToken: cancellationToken);
 }
 ```
-
+Créer une Procedural Generation method du script et ensuite la mettre dans Generation Method du Grid Générator
 
 
 ---
