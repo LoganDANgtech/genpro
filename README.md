@@ -24,7 +24,7 @@ yapyap
 - (Créer une scene) et y Rajouter le ```Procedural Grid Generator```
 <img src="Documentation/GridInInspector.png?raw=true"/>
 
-Il vous faudra rentrer votre logique dans cette fonction :  
+Dériver de ```ProceduralGenerationMethod```
 ```
 namespace Components.ProceduralGeneration.[Nom de l'algo]
 {
@@ -32,6 +32,7 @@ namespace Components.ProceduralGeneration.[Nom de l'algo]
     public class [Nom de l'algo] : ProceduralGenerationMethod
     {
 ```
+Il vous faudra rentrer votre logique dans cette fonction :  
 ```
 protected override async UniTask ApplyGeneration(CancellationToken cancellationToken)
 {
