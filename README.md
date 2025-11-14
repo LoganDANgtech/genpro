@@ -13,6 +13,7 @@ yapyap
   - [Noise Generator](#NoiseGenerator)
 
 </details>
+---
 1. ## Getting started
 
 - Créer un projet Unity 6
