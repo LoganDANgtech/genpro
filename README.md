@@ -29,6 +29,8 @@ Il vous faudra rentrer votre logique dans cette fonction :
 namespace Components.ProceduralGeneration.[Nom de l'algo]
 {
     [CreateAssetMenu(menuName = "Procedural Generation Method/[Nom de l'algo]")]
+    public class [Nom de l'algo] : ProceduralGenerationMethod
+    {
 ```
 ```
 protected override async UniTask ApplyGeneration(CancellationToken cancellationToken)
