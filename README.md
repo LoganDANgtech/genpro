@@ -26,6 +26,11 @@ yapyap
 
 Il vous faudra rentrer votre logique dans cette fonction :  
 ```
+namespace Components.ProceduralGeneration.[Nom de l'algo]
+{
+    [CreateAssetMenu(menuName = "Procedural Generation Method/[Nom de l'algo]")]
+```
+```
 protected override async UniTask ApplyGeneration(CancellationToken cancellationToken)
 {
     //Définition des variables
@@ -39,6 +44,8 @@ protected override async UniTask ApplyGeneration(CancellationToken cancellationT
     await UniTask.Delay(GridGenerator.StepDelay, cancellationToken: cancellationToken);
 }
 ```
+
+
 
 ---
 
