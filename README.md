@@ -8,7 +8,7 @@ yapyap
 <details>
 <summary>Liens</summary>
 
-  - [Getting Started](#[Gettingstarted](https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask))
+  - [Getting Started](#[Gettingstarted])
   - [Simple Room Placement](#SimpleRoomPlacement)
   - [BSP](#BSP)
   - [Cellular Automata](#CellularAutomata)
