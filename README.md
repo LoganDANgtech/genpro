@@ -8,7 +8,7 @@ yapyap
 <details>
 <summary>Liens</summary>
 
-  - [Getting Started](#[Gettingstarted])
+  - [Getting Started](##1-getting-started)
   - [Simple Room Placement](#SimpleRoomPlacement)
   - [BSP](#BSP)
   - [Cellular Automata](#CellularAutomata)
