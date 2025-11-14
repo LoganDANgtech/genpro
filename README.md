@@ -18,23 +18,31 @@ yapyap
 
 a
 A
+
+A
+
 A
 A
-A
+
 AA
+
+A
+
 A
 A
 A
 A
 A
 A
+
 A
 A
+
 A
 A
+
 A
-A
-A
+
 a
 
 ## 1. Getting started
