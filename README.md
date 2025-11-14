@@ -22,6 +22,23 @@ yapyap
 - Installer Unitask avec le l'url [https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask] Dans l'Asset Manager
 
 - (Créer une scene) et y Rajouter le ```Procedural Grid Generator```
-<img src="Documentation/GridInInspector.png?raw=true"/> 
+<img src="Documentation/GridInInspector.png?raw=true"/>
+
+Il vous faudra rentrer votre logique dans cette fonction :  
+```
+protected override async UniTask ApplyGeneration(CancellationToken cancellationToken)
+{
+    //Définition des variables
+
+    // Check for cancellation
+    cancellationToken.ThrowIfCancellationRequested();
+
+    // Logique du code
+
+    // Waiting between steps to see the result.
+    await UniTask.Delay(GridGenerator.StepDelay, cancellationToken: cancellationToken);
+}
+```
+
 ---
 
