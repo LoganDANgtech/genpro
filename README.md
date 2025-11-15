@@ -1,6 +1,8 @@
 Génération Procédurale
 ---
 Ce Projet Contient une génération de Grid et 4 Logique de génération procédurales implémentée dans Unity
+
+Réalisé lors de l'intervetion de RUTKOWSKI Yona a Gaming Campus pour la classe G.Tech 3
 ---
 ## Table of Content
 
@@ -72,6 +74,8 @@ Le Cellular Automata (Utilisé dans le jeu de la vie) est un algorithme qui suit
 regarder les entourages de ma case, et si X case sont d'un type ma case deviendras du type
 dans ce cas si, si ma case est entouré de X case d'herbe la case deviendras (ou resteras) de l'herbe
 
+
+(pour des raison de performance la génération basique de grid a été modifié pour changer le sprite et la template de la cell plutot que d'insantier un Gameobject)
 L'algorithme peut etre utile pour de la génération de terrain basique
 <img src="Documentation/CA.png?raw=true"/>
 ---
