@@ -63,5 +63,6 @@ Puis des salles sont générées aléatoirement dans les espace dédiés,
 et des couloirs sont créés entre les salles reliées dans des parcelles puis entre salles reliées entre les parents de leur parcelles
 
 Il peut etre plus utile que le SRP pour générer un Donjon
+
 <img src="Documentation/BSP.png?raw=true"/>
---
+---
