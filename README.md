@@ -82,4 +82,12 @@ dans ce cas si, si ma case est entouré de X case d'herbe la case deviendras (ou
 L'algorithme peut etre utile pour de la génération de terrain basique
 <img src="Documentation/CA.png?raw=true"/>
 ---
+## 4. Noise Generator
+Le noise generator utilise FastNoiseLite pour générer des bruits qui vont ensuite être utilisé dans un code pour générer un terrain en fonction de la valeur des pixel de "L'image" généré
 
+Dans le projet un script customise aussi l'inspector pour permettre de choisir des valeures plus visuellement qu'avec des sliders
+<img src="Documentation/FNLEditor.png?raw=true"/>
+
+L'algorithme peut etre utile pour de la génération de terrain
+<img src="Documentation/FNL.png?raw=true"/>
+---
