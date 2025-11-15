@@ -65,4 +65,14 @@ et des couloirs sont créés entre les salles reliées dans des parcelles puis e
 Il peut etre plus utile que le SRP pour générer un Donjon
 
 <img src="Documentation/BSP.png?raw=true"/>
+
 ---
+## 3. Cellular Automata
+Le Cellular Automata (Utilisé dans le jeu de la vie) est un algorithme qui suit une logique assez simple appliqué a une grande échèle
+regarder les entourages de ma case, et si X case sont d'un type ma case deviendras du type
+dans ce cas si, si ma case est entouré de X case d'herbe la case deviendras (ou resteras) de l'herbe
+
+L'algorithme peut etre utile pour de la génération de terrain basique
+<img src="Documentation/CA.png?raw=true"/>
+---
+
