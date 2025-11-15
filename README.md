@@ -92,5 +92,5 @@ L'algorithme peut etre utile pour de la génération de terrain
 <img src="Documentation/FNL.png?raw=true"/>
 ---
 
-Merci a Yona RUTKOWSKI pour ses cours biens structurées qui viennent de mettre utile pour réaliser [Planet Flipper](https://github.com/Aggresive-Gamblers/PlanetFlipper) et qui j'en suis sur me serons utile pour mes futurs projet procéduraux
+Merci à Yona RUTKOWSKI pour ses cours bien structurés qui viennent de m'être utiles pour réaliser [Planet Flipper] (https://github.com/Aggresive-Gamblers/PlanetFlipper) et qui j'en suis sûr me seront utiles pour mes futurs projets procéduraux
 ---
