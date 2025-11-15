@@ -1,7 +1,6 @@
 Génération Procédurale
 ---
-yapyapyap
-yapyap
+Ce Projet Contient une génération de Grid et 4 Logique de génération procédurales implémentée dans Unity
 ---
 ## Table of Content
 
@@ -17,6 +16,8 @@ yapyap
 </details>
 
 ## 1. Getting started
+
+Comment installer le Grid:
 
 - Créer un projet Unity 6
 - Installer Unitask avec le l'url [https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask] Dans l'Asset Manager
@@ -49,6 +50,6 @@ protected override async UniTask ApplyGeneration(CancellationToken cancellationT
 ```
 Créer une Procedural Generation method du script et ensuite la mettre dans Generation Method du Grid Générator
 
-
 ---
-
+## 2. Simple Room Placement
+---
