@@ -1,7 +1,6 @@
 Génération Procédurale
 ---
-yapyapyap
-yapyap
+Ce Projet Contient une génération de Grid et 4 Logique de génération procédurales implémentée dans Unity
 ---
 ## Table of Content
 
@@ -9,7 +8,7 @@ yapyap
 <summary>Liens</summary>
 
   - 1. [Getting Started](#1-getting-started)
-  - 2. [Simple Room Placement](#SimpleRoomPlacement)
+  - 2. [Simple Room Placement](#2-simple-room-placement)
   - 3. [BSP](#BSP)
   - 4. [Cellular Automata](#CellularAutomata)
   - 5. [Noise Generator](#NoiseGenerator)
@@ -17,6 +16,8 @@ yapyap
 </details>
 
 ## 1. Getting started
+
+Comment installer le Grid:
 
 - Créer un projet Unity 6
 - Installer Unitask avec le l'url [https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask] Dans l'Asset Manager
@@ -49,6 +50,8 @@ protected override async UniTask ApplyGeneration(CancellationToken cancellationT
 ```
 Créer une Procedural Generation method du script et ensuite la mettre dans Generation Method du Grid Générator
 
-
 ---
-
+## 2. Simple Room Placement
+Le Simple Room Placement est un algorithme assez basique de placement de salles qui instantie des rectangle dans l'espace avec des tailles minimum est maximum
+<img src="Documentation/SRP.png?raw=true"/>
+---
