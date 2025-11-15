@@ -8,7 +8,7 @@ Ce Projet Contient une génération de Grid et 4 Logique de génération procéd
 <summary>Liens</summary>
 
   - 1. [Getting Started](#1-getting-started)
-  - 2. [Simple Room Placement](#SimpleRoomPlacement)
+  - 2. [Simple Room Placement](#2-simple-room-placement)
   - 3. [BSP](#BSP)
   - 4. [Cellular Automata](#CellularAutomata)
   - 5. [Noise Generator](#NoiseGenerator)
@@ -52,4 +52,6 @@ Créer une Procedural Generation method du script et ensuite la mettre dans Gene
 
 ---
 ## 2. Simple Room Placement
+Le Simple Room Placement est un algorithme assez basique de placement de salles qui instantie des rectangle dans l'espace avec des tailles minimum est maximum
+<img src="Documentation/SRP.png?raw=true"/>
 ---
