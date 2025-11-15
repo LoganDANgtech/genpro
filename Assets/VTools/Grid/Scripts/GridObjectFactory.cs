@@ -15,7 +15,6 @@ namespace VTools.Grid
 
             // 1. Instantiate controller from prefab
             GridObjectController view = UnityEngine.Object.Instantiate(template.View, parent);
-
             // 2. Create the data model
             GridObject gridObject = template.CreateInstance();
 

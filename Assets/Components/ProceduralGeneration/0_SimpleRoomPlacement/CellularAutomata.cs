@@ -24,7 +24,8 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
 
             Debug.Log($"Starting Grid instantiation ...");
             var time = DateTime.Now;
-            BuildGround();
+            await BuildGround();
+            
             BuildNoiseWater();
             Debug.Log($"Instantiation completed in {(DateTime.Now - time).TotalSeconds: 0.00} seconds.");
 
@@ -53,7 +54,7 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
 
                     if (RandomService.Range(0,100) < NoiseDensity)
                     {
-                        GridGenerator.AddGridObjectToCell(chosenCell, groundTemplate, true);
+                        GridGenerator.SwapSpriteGridObject(chosenCell, groundTemplate);
                     }
 
                 }
@@ -75,29 +76,22 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
                 {
                     int surround = 0;
 
-                    for (int i = 0; i < 2; i++)
+                    for (int a = 0; a < 3; a++)
                     {
-                        if (Grid.TryGetCellByCoordinates(x-1+i, z-1, out chosenCell) && chosenCell.ContainObject && chosenCell.GridObject.Template.Name == "Grass")
+                        for (int b = 0; b < 3; b++)
                         {
-                            surround++;
+                            if (!(a == 1 && b == 1))
+                            {
+                                if (Grid.TryGetCellByCoordinates(x - 1 + a, z - 1 + b, out var topCell))
+                                {
+                                    if (topCell.GridObject.Template.Name == GRASS_TILE_NAME)
+                                    {
+                                        surround++;
+                                    }
+                                }
+                            }
                         }
                     }
-                    if (Grid.TryGetCellByCoordinates(x - 1, z, out  chosenCell) && chosenCell.ContainObject && chosenCell.GridObject.Template.Name == "Grass")
-                    {
-                        surround++;
-                    }
-                    if (Grid.TryGetCellByCoordinates(x + 1, z, out  chosenCell) && chosenCell.ContainObject && chosenCell.GridObject.Template.Name == "Grass")
-                    {
-                        surround++;
-                    }
-                    for (int i = 0; i < 2; i++)
-                    {
-                        if (Grid.TryGetCellByCoordinates(x - 1+i, z+1, out chosenCell) && chosenCell.ContainObject && chosenCell.GridObject.Template.Name == "Grass")
-                        {
-                            surround++;
-                        }
-                    }
-                    
 
                     if (surround >= detection)
                     {
@@ -121,14 +115,13 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
                         continue;
                     }
 
-                    if (newgrid[x + z*Grid.Width])
+                    if (newgrid[x * Grid.Width + z])
                     {
-                        GridGenerator.AddGridObjectToCell(chosenCell, groundTemplate, true);
+                        GridGenerator.SwapSpriteGridObject(chosenCell, groundTemplate);
                     }
                     else
                     {
-                        GridGenerator.AddGridObjectToCell(chosenCell, waterTemplate, true);
-
+                        GridGenerator.SwapSpriteGridObject(chosenCell, waterTemplate);
                     }
                 }
             }

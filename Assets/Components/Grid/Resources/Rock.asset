@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Rock
   _view: {fileID: 3729838110348376328, guid: af527524f26b70145b2a9b311c340827, type: 3}
+  _sprite: {fileID: 21300000, guid: 88acf603b022b884db34baae927dc5f8, type: 3}

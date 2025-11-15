@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Sand
   _view: {fileID: 3729838110348376328, guid: e521af2ce6ee8c94bb32c7ea5ddc1196, type: 3}
+  _sprite: {fileID: 21300000, guid: 7fc12cba2cd5d264ebc6ebde5d36768c, type: 3}

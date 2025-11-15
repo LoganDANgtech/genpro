@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9700894911927249aaf8324dd8de036, type: 3}
   m_Name: CellularAutomata
   m_EditorClassIdentifier: 
-  _maxSteps: 5
-  NoiseDensity: 62
+  _maxSteps: 119
+  NoiseDensity: 87
   detection: 3
