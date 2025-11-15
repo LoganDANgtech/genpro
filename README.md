@@ -12,8 +12,8 @@ Réalisé lors de l'intervetion de RUTKOWSKI Yona a Gaming Campus pour la classe
   - 1. [Getting Started](#1-getting-started)
   - 2. [Simple Room Placement](#2-simple-room-placement)
   - 3. [BSP](#3-bsp-binary-space-partition)
-  - 4. [Cellular Automata](#3-cellular-automata)
-  - 5. [Noise Generator](#NoiseGenerator)
+  - 4. [Cellular Automata](#4-cellular-automata)
+  - 5. [Noise Generator](#5-noise-generator)
 
 </details>
 
