@@ -11,8 +11,8 @@ Réalisé lors de l'intervetion de RUTKOWSKI Yona a Gaming Campus pour la classe
 
   - 1. [Getting Started](#1-getting-started)
   - 2. [Simple Room Placement](#2-simple-room-placement)
-  - 3. [BSP](#BSP)
-  - 4. [Cellular Automata](#CellularAutomata)
+  - 3. [BSP](#3-bsp-binary-space-partition)
+  - 4. [Cellular Automata](#3-cellular-automata)
   - 5. [Noise Generator](#NoiseGenerator)
 
 </details>
@@ -69,7 +69,7 @@ Il peut etre plus utile que le SRP pour générer un Donjon
 <img src="Documentation/BSP.png?raw=true"/>
 
 ---
-## 3. Cellular Automata
+## 4. Cellular Automata
 Le Cellular Automata (Utilisé dans le jeu de la vie) est un algorithme qui suit une logique assez simple appliqué a une grande échèle
 regarder les entourages de ma case, et si X case sont d'un type ma case deviendras du type
 dans ce cas si, si ma case est entouré de X case d'herbe la case deviendras (ou resteras) de l'herbe
@@ -82,7 +82,7 @@ dans ce cas si, si ma case est entouré de X case d'herbe la case deviendras (ou
 L'algorithme peut etre utile pour de la génération de terrain basique
 <img src="Documentation/CA.png?raw=true"/>
 ---
-## 4. Noise Generator
+## 5. Noise Generator
 Le noise generator utilise FastNoiseLite pour générer des bruits qui vont ensuite être utilisé dans un code pour générer un terrain en fonction de la valeur des pixel de "L'image" généré
 
 Dans le projet un script customise aussi l'inspector pour permettre de choisir des valeures plus visuellement qu'avec des sliders
