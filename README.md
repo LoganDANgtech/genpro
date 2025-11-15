@@ -75,6 +75,7 @@ regarder les entourages de ma case, et si X case sont d'un type ma case deviendr
 dans ce cas si, si ma case est entouré de X case d'herbe la case deviendras (ou resteras) de l'herbe
 
 
+
 (pour des raison de performance la génération basique de grid a été modifié pour changer le sprite et la template de la cell plutot que d'insantier un Gameobject)
 
 
