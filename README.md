@@ -53,5 +53,16 @@ Créer une Procedural Generation method du script et ensuite la mettre dans Gene
 ---
 ## 2. Simple Room Placement
 Le Simple Room Placement est un algorithme assez basique de placement de salles qui instantie des rectangle dans l'espace avec des tailles minimum est maximum
+
+Il peut etre utile pour générer un Donjon
 <img src="Documentation/SRP.png?raw=true"/>
+---
+## 3. BSP (Binary Space Partition)
+Le BSP est un algorithme qui place des salles dans l'espace aussi mais de manière plus intélligente en coupant un espace en 2 parcelles aléatoirement proportionées qui seront à leur tour divisées en 2 jusqu'a que l'espace disponible ne puisse plus contenir une salle.
+Puis des salles sont générées aléatoirement dans les espace dédiés,
+et des couloirs sont créés entre les salles reliées dans des parcelles puis entre salles reliées entre les parents de leur parcelles
+
+Il peut etre plus utile que le SRP pour générer un Donjon
+
+<img src="Documentation/BSP.png?raw=true"/>
 ---
